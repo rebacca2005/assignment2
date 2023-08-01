@@ -1,0 +1,600 @@
+/* Styles specific to index.html */
+body, h1, h2, h3, h4, a, p, figure, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Lumanosimo', cursive;
+  font-size: 45px;
+  color: #ffffff; /* White color */
+}
+
+h2 {
+  font-family: 'Lumanosimo', cursive;
+  font-size: 25px;
+  color: #ffffff; /* White color */
+  text-align: right;
+  margin-right: 20px; /* Reduce right margin for better alignment */
+}
+
+h3 {
+  font-family: 'Rowdies', cursive;
+  font-size: 40px; 
+  color: #8b0000; /* Dark red color */
+}
+
+h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 35px;
+  background-color: #780000; /* Dark Red background */
+  color: #ffffff; /* white color */
+}
+
+p {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 25px; 
+  color: #ffffff; /* white color */
+}
+
+a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px; /* Increased font size */
+  color: #131010; /* Black color */
+  padding: 5px 10px; /* Add some padding for better visual appearance */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #780000; /* Light red background for header */
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  max-width: 50px; /* Adjust the size of the logo image */
+}
+
+.header-links {
+  display: flex;
+}
+
+.header-links .flex-item {
+  font-size: 20px; /* Adjust the font size for the links */
+  color: #ff0000; /* Black color for the links */
+  text-decoration: none;
+  padding: 0 10px; /* Add some spacing between links */
+}
+
+.header-links .flex-item:not(:last-child) {
+  margin-right: 20px; /* Add right margin to separate the links */
+}
+
+/* Style the main content container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./img/background_pizza.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Style the main content sections */
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px; /* Limit the maximum width of the content */
+  margin: 10px; /* Add some margin between sections */
+}
+
+/* Style for the image container */
+main > section > div > figure {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Style for the image */
+main > section img {
+  max-width: 50%; /* Reduce the image size */
+  height: auto;
+  border: 1px solid #ccc;
+  /* Add any other styles you want to apply to the image */
+}
+
+/* Offer Templates Styles */
+.offer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.offer-template {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cd9d66; /* Light cream background for offer template */
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.offer-template h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 24px;
+  color: #ff5722; /* Orange-red color */
+}
+
+.offer-template p {
+  font-family: 'Libre Baskerville', serif;
+  color: #780000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.offer-template .btn {
+  background-color: #ff5722; /* Orange-red color */
+  color: #a00101; /* White text color */
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.offer-template .btn:hover {
+  background-color: #e64700; /* Darker shade of orange-red */
+}
+/* Footer styles */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-item {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+.footer-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 5px;
+}
+
+.footer-item ul li:before {
+  content: "\2022";
+  padding-right: 5px;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #777;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles specific to order.html */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set common font family and line height for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5e9db; /* Light cream background (same as index.html) */
+}
+
+/* Styling for the main container of the order page */
+.orderpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+/* Styling for the header section */
+header {
+  background-color: #611700;
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Style for the header's h1 element */
+header h1 {
+  font-size: 36px;
+  color: #ff0000;
+}
+h2 {
+  color: #ff3c00;
+}
+
+/* Styling for the main content section */
+main {
+  background-color: antiquewhite;
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row; /* Change flex-direction to row to arrange elements side by side */
+  width: 100%; /* Change width to 100% to fit the container */
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* Styling for the form element */
+form {
+  width: 100%;
+  padding: 20px;
+  border: 10px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(159, 146, 146);
+  flex: 1; /* Allow the form to expand and fill the available space */
+}
+
+/* Style for the div elements within the form */
+form div {
+  margin-bottom: 20px; /* Increase the margin-bottom for better spacing between sections */
+}
+
+/* Style for the label elements */
+label {
+  font-weight: bold;
+}
+
+/* Styling for the price in label elements */
+label::after {
+  content: attr(data-price);
+  margin-left: 5px;
+  color: #555;
+}
+
+/* Style for various input elements and select elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Style for the submit button */
+button {
+  background-color: #ff5722; /* Orange-red color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Styling for the aside section */
+aside {
+  padding: 20px; /* Reduce padding to improve the layout */
+  max-width: 300px; /* Limit the width of the aside section */
+  display: flex; /* Add flex to use flexbox properties */
+  flex-direction: column; /* Set the flex direction to column */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+}
+
+/* Styling for the image within the aside section */
+aside img {
+  max-width: 100%; /* Allow the image to expand to full width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Highlight the headings (choose pizza) */
+.heading::before {
+  content: attr(data-text); /* Use the data-text attribute to display the desired text */
+  background-color: #ff5722; /* Orange-red color */
+  color: #fff; /* White text color */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Adjust the positioning of the select box for delivery option */
+form div:last-child {
+  margin-top: 30px; /* Increase the margin-top to create more space for delivery options */
+}
+
+/* Group non-veg and veg pizza and toppings divs */
+div[class^="heading"] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px; /* Increased font size */
+  color: #131010; /* Black color */
+  padding: 5px 10px; /* Add some padding for better visual appearance */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Common Layout Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-logo figure {
+  margin-right: 10px;
+}
+
+.header-logo h1 {
+  font-family: 'Alfa Slab One', serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-links {
+  display: flex;
+}
+
+.header-links .flex-item {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-item {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+.footer-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 5px;
+}
+
+.footer-item ul li:before {
+  content: "\2022";
+  padding-right: 5px;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #777;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles specific to contact.html */
+main section ul {
+  list-style: none;
+  text-align: left;
+  margin-top: 20px;
+}
+
+main section li {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 27px;
+  color: #00ffff; /* Pinkish purple color */
+  margin-bottom: 10px;
+}
+
+/* Add hover effect for li elements in the contact details section */
+main section li:hover {
+  color: #ff3c00; /* Orange-red color on hover */
+  cursor: pointer;
+}
+
+/* Contact  */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: #ff5722; /* Orange-red color for links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #e64700; /* Darker shade of orange-red on hover */
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; /* Add some padding for better visual appearance */
+  max-width: 600px; /* Limit the maximum width of the content */
+  margin: 0 auto; /* Center the aside element horizontally */
+}
+
+aside h2 {
+  font-size: 30px; /* Adjust the font size for the heading */
+}
+
+aside p {
+  color: #ff6f00; /* orange colour for text in contact.html */
+  text-align: center;
+}
+
+aside img {
+  max-width: 50%; /* Adjust the image size to fit the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  margin-top: 20px; /* Add some margin to separate the image from the text */
+}
+

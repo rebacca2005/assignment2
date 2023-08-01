@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Pizza - Order Page</title>
+  <meta name="description" content="Order your favorite pizza from City Pizzeria">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Add Google Font and CSS file -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600&family=Fira+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&family=Lumanosimo&family=Mynerve&family=Orbitron:wght@400;500&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="orderpage">
+  <header>
+    <h1>Order Pizza Now</h1>
+    <h2>"Get Mouth-Watering Pizza Today"</h2>
+    <div class="flex-container">
+      <a href="index.html" class="flex-item">Home Page</a>
+      <a href="order.html" class="flex-item">Order Page</a>
+      <a href="contact.html" class="flex-item">Contact Details</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Order Your Favorite Pizza</h2>
+      <form action="submit_order.php" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="pizza-size">Pizza Size:</label>
+        <select id="pizza-size" name="pizza-size" required>
+          <option value="" disabled selected>Select Pizza Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div>
+        <label class="heading">Choose Pizza[Non-veg]:</label>
+        <div>
+          <input type="checkbox" id="Pepperoni_pizza" name="pizza" value="Pepperoni pizza" data-price="14.99">
+          <label for="Pepperoni_pizza">Pepperoni pizza -($14.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Buffalo_bbq_chicken_pizza" name="pizza" value="Buffalo bbq chicken pizza" data-price="16.99">
+          <label for="Buffalo_bbq_chicken_pizza">Buffalo Bbq chicken pizza -($16.99)</label>  
+        </div>
+        <div>
+          <input type="checkbox" id="Classic_chicken_cheese_pizza" name="pizza" value="Classic chicken cheese pizza" data-price="15.99">
+          <label for="Classic_chicken_cheese_pizza">Classic chicken cheese pizza -($15.99)</label>  
+        </div>
+        <div>
+          <input type="checkbox" id="Butter_chicken_pizza" name="pizza" value="Butter chicken pizza" data-price="16.99">
+          <label for="Butter_chicken_pizza">Butter chicken pizza -($16.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="5_Cheese_chicken" name="pizza" value="5 Cheese chicken" data-price="14.99">
+          <label for="5_Cheese_chicken">5 Cheese chicken pizza -($14.99)</label>  
+        </div>
+      </div>
+      <div>
+        <label class="heading">Choose Additional Toppings[Non-veg]:</label>
+        <div>
+          <input type="checkbox" id="Pepperoni" name="toppings" value="Pepperoni" data-price="1.99">
+          <label for="Pepperoni">Pepperoni -($1.99)</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Barbeque_chicken" name="toppings" value="Barbeque chicken" data-price="1.99">
+            <label for="Barbeque_chicken">Barbeque chicken -($1.99)</label>  
+          </div>
+        <div>
+          <input type="checkbox" id="Chicken" name="toppings" value="Chicken" data-price="1.50">
+          <label for="Chicken">Chicken -($1.50)</label>  
+        </div>
+        <div>
+          <input type="checkbox" id="Salami" name="toppings" value="Salami" data-price="1.79">
+          <label for="Salami">Salami -($1.79)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Bacon" name="toppings" value="Bacon" data-price="1.79">
+          <label for="Bacon">Bacon -($1.79)</label>  
+        </div>
+      </div>
+      <div>
+        <label class="heading">Choose Pizza[Veg]:</label>
+        <div>
+          <input type="checkbox" id="veg_fiesta_pizza" name="pizza" value="veg fiesta pizza" data-price="12.99">
+          <label for="veg_fiesta_pizza">veg fiesta pizza -($12.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Golden_delight_pizza" name="pizza" value="Golden delight pizza" data-price="14.99">
+          <label for="Golden_delight_pizza">Golden delight pizza -($14.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Paneer_delight_pizza" name="pizza" value="Paneer delight pizza" data-price="14.99">
+          <label for="Paneer_delight_pizza">Paneer delight pizza -($14.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Cheesy_corn_pizza" name="pizza" value="Cheesy corn pizza" data-price="13.99">
+          <label for="Cheesy_corn_pizza">Cheesy corn pizza -($13.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Cheese_Burst" name="pizza" value="Cheese Burst" data-price="13.99">
+          <label for="Cheese_Burst">Cheese Burst -($13.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Jalapenos_veggies_pizza" name="pizza" value="Jalapenos veggies pizza" data-price="12.99">
+          <label for="Jalapenos_veggies_pizza">Jalapenos veggies pizza -($12.99)</label> 
+        </div>
+      </div>
+      <div>
+        <label class="heading">Choose Additional Toppings[Veg]:</label>
+        <div>
+          <input type="checkbox" id="Mushroom" name="toppings" value="Mushroom" data-price="0.99">
+          <label for="Mushroom">Mushroom -($0.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Onion" name="toppings" value="Onion" data-price="0.99">
+          <label for="Onion">Onion -($0.99)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Tomato" name="toppings" value="Tomato" data-price="1.99">
+          <label for="Tomato">Tomato -($1.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Corn" name="toppings" value="Corn" data-price="1.99">
+          <label for="Corn">Corn -($1.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Olives_and_Pickles" name="toppings" value="Olives and Pickles" data-price="0.99">
+          <label for="Olives_and_Pickles">Olives and Pickles -($0.99)</label> 
+        </div>
+        <div>
+          <input type="checkbox" id="Jalapenos" name="toppings" value="Jalapenos" data-price="0.99">
+          <label for="Jalapenos">Jalapenos -($0.99)</label> 
+        </div>
+      </div>
+      <div>
+        <label class="heading">Delivery Method:</label>
+        <div>
+          <input type="radio" id="Door_Delivery" name="delivery-method" value="Door Delivery" required>
+          <label for="Door_Delivery">Door Delivery</label>
+        </div>
+        <div>
+          <input type="radio" id="Store_Pickup" name="delivery-method" value="Store Pickup">
+          <label for="Store_Pickup">Store Pickup</label>
+        </div>
+      </div>
+      <button type="submit">Finish And Place Order</button>
+    </form>
+  </section>
+</main>
+<aside>
+  <article>
+    <h2>Featured Pizza</h2>
+    <img src="./img/smallpizza.png" alt="Pizza" class="featured-pizza">
+  </article>
+</aside>
+<footer>
+  <div class="footer-container">
+    <div class="footer-item">
+      <h3>Partners</h3>
+      <p>Our delicious pizzas are made possible with the help of our valued partners:</p>
+      <ul>
+        <li>Local Farmers: Providing fresh and high-quality ingredients.</li>
+        <li>Cheese Suppliers: Supplying the finest cheese varieties.</li>
+        <li>Sauce Specialists: Creating our signature pizza sauce.</li>
+        <li>Delivery Partners: Ensuring your pizzas reach you on time.</li>
+      </ul>
+    </div>
+    
+    <div class="footer-item">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>About Us: www.citypizza.com/about</li>
+        <li>Menu: www.citypizza.com/menu</li>
+        <li>Locations: www.citypizza.com/locations</li>
+        <li>Contact Us: www.citypizza.com/contact</li>
+        <li>Careers: www.citypizza.com/careers</li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h3>Connect with Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/citypizza" target="_blank">
+          <img src="./img/facebookimg.png" alt="Facebook">
+        </a>
+        <a href="https://www.twitter.com/citypizza" target="_blank">
+          <img src="./img/twitterimg.jpg" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/citypizza" target="_blank">
+          <img src="./img/instaimg.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 City Pizza. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
